@@ -53,4 +53,6 @@ class Rectangulo:#clase llamada Rectangulo
         self.base = abs(self.pfinal.x - self.pinicial.x)
         print("La base del rectángulo es {}".format(self.base))
 
-        
+    def area(self):#método llamado area que muestre el area.
+        self.area = self.base * self.altura
+        print("El área del rectángulo es {} m^2".format(self.area))
