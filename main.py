@@ -45,9 +45,12 @@ class Punto: #Clase llamada Punto
 
 
 class Rectangulo:#clase llamada Rectangulo
-    def __init__(self, pinicial=0, pfinal=0):#método constructor para crear ambos puntos fácilmente
+    def __init__(self, pinicial=Punto(), pfinal=Punto()):#método constructor para crear ambos puntos fácilmente
         self.pinicial = pinicial
         self.pfinal = pfinal
 
+    def base(self):#método llamado base que muestre la base
+        self.base = abs(self.pfinal.x - self.pinicial.x)
+        print("La base del rectángulo es {}".format(self.base))
 
-
+        
