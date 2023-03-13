@@ -30,3 +30,8 @@ class Punto: #Clase llamada Punto
         else:
             print("{} está sobre el origen".format(self))
 
+    def vector(self, punto):#método llamado vector, que tome otro punto y calcule el vector resultante entre los dos puntos
+        print("El vector resultante de {} y {} es ({}, {})".format(self, punto, punto.x - self.x, punto.y - self.y))
+
+    def distancia(self, punto):
+
