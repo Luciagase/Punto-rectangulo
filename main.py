@@ -40,7 +40,6 @@ class Punto: #Clase llamada Punto
 
     def distancia(self, punto):#método llamado distancia, que tome otro punto y calcule la distancia entre los dos puntos y la muestre por pantalla
         dist= math.sqrt((punto.x - self.x)**2 + (punto.y - self.y)**2)
-        print("La distancia entre {} y {} es {}".format(self, punto, dist))
         return dist
 
 
@@ -52,6 +51,10 @@ class Rectangulo:#clase llamada Rectangulo
     def base(self):#método llamado base que muestre la base
         self.base = abs(self.pfinal.x - self.pinicial.x)
         print("La base del rectángulo es {}".format(self.base))
+
+    def altura(self):#método llamado altura que muestre la altura
+        self.altura = abs(self.pfinal.y - self.pinicial.y)
+        print("La altura del rectángulo es {}".format(self.altura))
 
     def area(self):#método llamado area que muestre el area.
         self.area = self.base * self.altura
