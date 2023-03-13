@@ -33,5 +33,8 @@ class Punto: #Clase llamada Punto
     def vector(self, punto):#método llamado vector, que tome otro punto y calcule el vector resultante entre los dos puntos
         print("El vector resultante de {} y {} es ({}, {})".format(self, punto, punto.x - self.x, punto.y - self.y))
 
-    def distancia(self, punto):
+    def distancia(self, punto):#método llamado distancia, que tome otro punto y calcule la distancia entre los dos puntos y la muestre por pantalla
+        dist= math.sqrt((punto.x - self.x)**2 + (punto.y - self.y)**2)
+        print("La distancia entre {} y {} es {}".format(self, punto, dist))
+        return dist
 
