@@ -6,6 +6,11 @@ Añade un método llamado cuadrante que indique a qué cuadrante pertenece el pu
 Añade un método llamado vector, que tome otro punto y calcule el vector resultante entre los dos puntos.
 (Optativo) Añade un método llamado distancia, que tome otro punto y calcule la distancia entre los dos puntos y la muestre por pantalla. La fórmula es la siguiente:
 
+Crea una clase llamada Rectangulo con dos puntos (inicial y final) que formarán la diagonal del rectángulo.
+Añade un método constructor para crear ambos puntos fácilmente, si no se envían se crearán dos puntos en el origen por defecto.
+Añade al rectángulo un método llamado base que muestre la base.
+Añade al rectángulo un método llamado altura que muestre la altura.
+Añade al rectángulo un método llamado area que muestre el area.
 '''
 
 import math
@@ -37,4 +42,12 @@ class Punto: #Clase llamada Punto
         dist= math.sqrt((punto.x - self.x)**2 + (punto.y - self.y)**2)
         print("La distancia entre {} y {} es {}".format(self, punto, dist))
         return dist
+
+
+class Rectangulo:#clase llamada Rectangulo
+    def __init__(self, pinicial=0, pfinal=0):#método constructor para crear ambos puntos fácilmente
+        self.pinicial = pinicial
+        self.pfinal = pfinal
+
+
 
