@@ -9,7 +9,7 @@ Crea un rectángulo utilizando los puntos A y B.
 Consulta la base, altura y área del rectángulo.
 
 '''
-from main import Punto, Rectangulo
+from database import Punto, Rectangulo
 
 # Crear puntos
 A = Punto(2, 3)
